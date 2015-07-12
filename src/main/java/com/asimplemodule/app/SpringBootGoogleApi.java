@@ -14,10 +14,10 @@ import org.springframework.web.bind.annotation.RestController;
 		"com.asimplemodule.config",
 		"com.asimplemodule.security"})
 @RestController
-public class TimeoffApplication {
+public class SpringBootGoogleApi {
 
     public static void main(String[] args) {
-        SpringApplication.run(TimeoffApplication.class, args);
+        SpringApplication.run(SpringBootGoogleApi.class, args);
     }
     
     

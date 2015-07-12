@@ -15,7 +15,7 @@ import org.springframework.security.web.authentication.preauth.AbstractPreAuthen
 import com.asimplemodule.security.GoogleSecurityAuthenticationEntryPoint;
 import com.asimplemodule.security.GoogleSecurityAuthenticationFilter;
 import com.asimplemodule.security.GoogleSecurityAuthenticationProvider;
-import com.asimplemodule.security.service.TimeoffUserDetailsService;
+import com.asimplemodule.security.service.DemoAppUserDetailsService;
 
 
 @Configuration
@@ -71,7 +71,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	
 	@Bean
 	public UserDetailsService timeoffUserDetailsService() {
-		TimeoffUserDetailsService timeoffUserDetailsService = new TimeoffUserDetailsService();
+		DemoAppUserDetailsService timeoffUserDetailsService = new DemoAppUserDetailsService();
 		return timeoffUserDetailsService;
 	}
 	
